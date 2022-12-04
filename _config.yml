@@ -23,7 +23,7 @@ author:
 
 
 # URL settings
-url: "https://1f616neko.github.io/blog/" # Domain Name of host. [username].github.io for github pages
+url: "https://1f616neko.github.io/blog" # Domain Name of host. [username].github.io for github pages
 permalink: pretty
 
 markdown: kramdown
