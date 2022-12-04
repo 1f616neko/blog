@@ -79,3 +79,6 @@ defaults:
 relative_links:
   enabled:     true
   collections: false
+
+plugins:
+  - jekyll-remote-theme
