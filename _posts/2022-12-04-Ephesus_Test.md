@@ -2,6 +2,8 @@
 title: "Ephesus Test"
 date: 2022-12-04T12:37:38+08:00
 author: 可愛EMO醬！
+about: Just a Test. 只是一個測試。
+lang: en-US
 layout: post
 # permalink: /justo-imperdiet-condimentum-ad-cum-acanone/
 categories: 測試

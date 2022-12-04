@@ -8,6 +8,7 @@ layout: default
 {% endif %}
 <div class="post-header">
 	<div class="post-date">{{ page.date | date: "%d.%m.%Y" }}</div>
+	{% if post.about %}<div class="post-about">{{ post.about }}</div>{% endif %}
 	<div class="post-share">
 		Share:&nbsp; 
 		<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}/{{page.slug}}" target="_blank"><img src="{{ site.url }}/assets/images/icon/facebook.svg" class="social-icon"></a>
@@ -16,7 +17,7 @@ layout: default
 	</div>
 </div>
 
-<div class="blog-post-content">
+<div class="blog-post-content"{% if page.lang %} lang="{{ page.lang }}"{% endif %}>
 	<h1>{{page.title}}</h1>
 	{{ content }}
 </div>
