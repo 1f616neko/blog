@@ -1,0 +1,81 @@
+# Site settings
+site: 某廢物的小天地
+title: 某廢物的小天地
+keywords: blog
+description: >-
+  某廢物的文章喵！
+lang: zh-TW
+timezone:  Asia/Hong_Kong
+repo: https://github.com/1f616neko/blog # site repo [optional]
+remote_theme: onepase/Ephesus
+
+# Author settings
+author:
+  name: 可愛EMO醬！
+  bio: 是可愛喵男！<br />
+  picture: https://upload.wikimedia.org/wikipedia/commons/7/7c/Twemoji12_1f616.svg
+  github: Emojigit # github username
+  twitter: # twitter username
+  facebook: # facebook username
+  instagram: # instagram username
+  youtube: # youtube username
+  linkedin: # linkedin username
+  email: emonya@duck.com # email adress
+
+
+# URL settings
+url: "https://1f616neko.github.io/blog" # Domain Name of host. [username].github.io for github pages
+permalink: pretty
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+paginate: 20
+paginate_path: "/page/:num"
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
