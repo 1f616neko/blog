@@ -38,7 +38,7 @@ exclude:
   - .obsidian
   - Gemfile
   - Gemfile.lock
-  - LICENSE.md
+  - LICENSE_OF_THEME.md
   - README.md
   - CONTRIBUTING.md
 
