@@ -27,7 +27,7 @@ function toggleNightMode(){
 	}
 }
 
-document.addEventListener('DOMContentLoaded', e => {
+document.querySelector("iframe.giscus-frame").addEventListener("load", e => {
 	sendMessage({
 		setConfig: {
 			theme: (document.documentElement.getAttribute('data-theme')),
