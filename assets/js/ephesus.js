@@ -1,8 +1,8 @@
-function sendMessage<T>(message: T) {
-	const iframe = document.querySelector<HTMLIFrameElement>('iframe.giscus-frame');
-	if (!iframe) return;
-	iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-  }
+function sendMessage(message) {
+	const iframe = document.querySelector("iframe.giscus-frame")
+	if (!iframe) return
+	iframe.contentWindow.postMessage({ giscus: message }, "https://giscus.app")
+}
 
 function toggleNightMode(){
 	if(document.documentElement.getAttribute('data-theme') == 'light'){
