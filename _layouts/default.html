@@ -16,6 +16,9 @@
 			{% if site.author.youtube %}
 				<a href="{{site.author.youtube}}" target="_blank"><img src="assets/images/icon/youtube.svg" class="social-icon"></a>
 			{% endif %}
+			{% if site.author.telegram %}
+				<a href="https://t.me/{{site.author.telegram}}" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Font_Awesome_5_brands_telegram.svg" class="social-icon"></a>
+			{% endif %}
 			{% if site.author.github %}
 				<a href="https://github.com/{{site.author.github}}" target="_blank"><img src="assets/images/icon/github.svg" class="social-icon"></a>
 			{% endif %}
@@ -33,7 +36,8 @@
 	</div>
 	{{ content }}
 	<div class="footer">
-		<span>Made with <font color="red">♥</font> on Earth, a minimalist Jekyll Theme by <a href="https://hakan.io"><b>Hakan</b></a></span>
+		<span>可愛EMO醬的可愛文章！本站的全部文字在<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">.共享創意 姓名標示-相同方式分享 3.0協議</a>之條款下提供。</span>
+		<span>使用<a href="https://github.com/onepase/Ephesus">Ephesus</a>主題，相關檔案在<a href="https://github.com/onepase/Ephesus/blob/master/_config.yml" lang="en">MIT License</a>之條款下提供。</span>
 	</div>
 </div>
 {% include footer.html %}
