@@ -100,6 +100,10 @@ body{
 }
 
 .post-tag{margin-bottom: 5px;}
+.post-tag-text{
+  font-weight: 500;
+  margin-right: 2px;
+}
 
 .tags{display: flex; flex-wrap: wrap; justify-content: space-between;}
 .tag{background: var(--bg-color); padding: 5px 10px; margin-right: 10px; margin-bottom: 10px; display: flex; align-items: center;}
