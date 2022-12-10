@@ -75,6 +75,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      comment: true
 
 relative_links:
   enabled:     true
