@@ -43,7 +43,7 @@ layout: default
 			{%- assign next = next.next -%}
 		{%- endif %}
 		{%- unless next.hidden -%}
-			<a class="next" href="{{ next | relative_url }}">{{ next.title }} &gt;</a>
+			<a class="next{% unless prev %}{% if prev.hidden %} next-only{% endif %}{% endunless%}" href="{{ next | relative_url }}">{{ next.title }} &gt;</a>
 		{%- endunless %}
 	{%- endif %}
 </div>
