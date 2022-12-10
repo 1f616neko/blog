@@ -35,7 +35,7 @@ layout: default
 			{%- assign prev = prev.previous -%}
 		{%- endif -%}
 		{%- unless prev.hidden -%}
-		{%- assign prevexist = true -%}
+			{%- assign prevexist = true -%}
 			<a class="prev" href="{{ prev | relative_url }}">&lt; {{ prev.title }}</a>
 		{%- endunless -%}
 	{%- endif %}
@@ -45,7 +45,7 @@ layout: default
 			{%- assign next = next.next -%}
 		{%- endif %}
 		{%- unless next.hidden -%}
-			<a class="next{% unless prevexist %} next-only{% endunless%}" href="{{ next | relative_url }}">{{ next.title }} &gt;</a>
+			<a class="next" href="{{ next | relative_url }}">{{ next.title }} &gt;</a>
 		{%- endunless %}
 	{%- endif %}
 </div>
