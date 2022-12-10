@@ -28,10 +28,23 @@ layout: default
 	{% endfor %}
 </div>
 <div class="navigation">
-	{% if page.previous %}
-		<a class="prev" href="{{ page.previous | relative_url }}">< {{ page.previous.title }}</a>
-	{% endif %} {% if page.next %}
-	<a class="next" href="{{ page.next | relative_url }}">{{ page.next.title }} ></a>
-{% endif %}
+	{%- if page.previous -%}
+		{%- assign prev = page.previous -%}
+		{%- if prev.hidden -%}
+			{%- assign prev = prev.previous -%}
+		{%- endif -%}
+		{%- unless prev.hidden -%}
+			<a class="prev" href="{{ prev | relative_url }}">&lt; {{ prev.title }}</a>
+		{%- endunless -%}
+	{%- endif %}
+	{%- if page.next -%}
+		{% assign next = page.next -%}
+		{%- if next.hidden -%}
+			{%- assign next = next.next -%}
+		{%- endif %}
+		{%- unless next.hidden -%}
+			<a class="next" href="{{ next | relative_url }}">{{ next.title }} &gt;</a>
+		{%- endunless %}
+	{%- endif %}
 </div>
 {% include disqus.html %}
