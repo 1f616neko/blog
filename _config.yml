@@ -1,9 +1,9 @@
 # Site settings
-site: 某廢物的小天地
-title: 某廢物的小天地
+site: EMO醬的小天地
+title: EMO醬的小天地
 keywords: blog
 description: >-
-  某廢物的文章喵！
+  EMO醬的文章喵！
 lang: zh-TW
 timezone:  Asia/Hong_Kong
 repo: https://github.com/1f616neko/blog # site repo [optional]
