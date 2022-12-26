@@ -21,7 +21,7 @@ layout: default
 	<h1>{{page.title}}</h1>
 	{{ content }}
 </div>
-<div class="tags-container">
+<div class="tags-container" noprint>
 	<div class="post-tag-text">Tags:</div>
 	{% for tag in page.tags %}
 		<a href="{{ site.url }}/tags/#{{tag | cgi_escape}}" class="post-tag">{{tag}}</a>{% unless forloop.last %}, {% endunless %}
