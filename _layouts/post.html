@@ -9,7 +9,7 @@ layout: default
 <div class="post-header">
 	<div class="post-date">{{ page.date | date: "%d.%m.%Y" }}</div>
 	{% if page.about %}<div class="post-about">{{ page.about }}</div>{% endif %}
-	<div class="post-share">
+	<div class="post-share" hiddenprint>
 		Share:&nbsp; 
 		<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}/{{page.slug}}" target="_blank"><img src="{{ site.url }}/assets/images/icon/facebook.svg" class="social-icon"></a>
 		<a href="https://twitter.com/intent/tweet?source=tweetbutton&amp;original_referer={{site.url}}/{{page.slug}}&amp;text={{page.title}} - {{site.url}}/{{page.slug}}" target="_blank"><img src="{{ site.url }}/assets/images/icon/twitter.svg" class="social-icon"></a>
@@ -27,7 +27,7 @@ layout: default
 		<a href="{{ site.url }}/tags/#{{tag | cgi_escape}}" class="post-tag">{{tag}}</a>{% unless forloop.last %}, {% endunless %}
 	{% endfor %}
 </div>
-<div class="navigation">
+<div class="navigation" noprint>
 	{%- assign prevexist = false -%}
 	{%- if page.previous -%}
 		{%- assign prev = page.previous -%}

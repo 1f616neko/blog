@@ -15,6 +15,22 @@
   --border-color: #6a6a6a;
 }
 
+@media print {
+  :root {
+    --bg-color: #fafafa !important;
+    --bg-hover-color: #ececec !important;
+    --body-bg: #fff !important;
+    --primary-font-color: #000 !important;
+    --border-color: #dadada !important;
+  }
+  [noprint] {
+    display: none !important;
+  }
+  [hiddenprint] {
+    visibility: hidden !important;
+  }
+}
+
 body{
   font-family: 'Noto Sans HK', 'Noto Sans', sans-serif;
   font-weight: 300;
