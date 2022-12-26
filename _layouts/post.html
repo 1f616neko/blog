@@ -6,10 +6,10 @@ layout: default
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 {% endif %}
-<div class="post-header">
+<div class="post-header" noprint>
 	<div class="post-date">{{ page.date | date: "%d.%m.%Y" }}</div>
 	{% if page.about %}<div class="post-about">{{ page.about }}</div>{% endif %}
-	<div class="post-share" hiddenprint>
+	<div class="post-share">
 		Share:&nbsp; 
 		<a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}/{{page.slug}}" target="_blank"><img src="{{ site.url }}/assets/images/icon/facebook.svg" class="social-icon"></a>
 		<a href="https://twitter.com/intent/tweet?source=tweetbutton&amp;original_referer={{site.url}}/{{page.slug}}&amp;text={{page.title}} - {{site.url}}/{{page.slug}}" target="_blank"><img src="{{ site.url }}/assets/images/icon/twitter.svg" class="social-icon"></a>
