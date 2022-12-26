@@ -29,6 +29,9 @@
   [hiddenprint] {
     visibility: hidden !important;
   }
+  .container {
+    width: 100% !important;
+  }
 }
 
 body{
