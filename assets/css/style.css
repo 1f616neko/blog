@@ -23,7 +23,7 @@
     --primary-font-color: #000 !important;
     --border-color: #dadada !important;
   }
-  [noprint], .gitcus {
+  [noprint], .giscus {
     display: none !important;
   }
   [hiddenprint] {
