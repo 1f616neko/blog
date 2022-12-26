@@ -6,7 +6,7 @@ description: >-
   EMO醬的文章喵！
 lang: zh-TW
 timezone:  Asia/Hong_Kong
-repo: https://github.com/1f616neko/blog # site repo [optional]
+repo: 1f616neko/blog # site repo [optional]
 repository: 1f616neko/blog
 
 # Author settings
