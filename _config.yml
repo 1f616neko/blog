@@ -47,6 +47,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-minifier
 paginate: 20
 paginate_path: "/page/:num"
 
@@ -83,3 +84,6 @@ relative_links:
   collections: false
 
 
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
