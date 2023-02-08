@@ -15,7 +15,7 @@ author:
   bio: 是可愛喵男！<br />
   picture: https://upload.wikimedia.org/wikipedia/commons/7/7c/Twemoji12_1f616.svg
   github: Emojigit # github username
-  twitter: # twitter username
+  twitter: "1F616EMO" # twitter username
   facebook: # facebook username
   instagram: # instagram username
   youtube: # youtube username
@@ -25,7 +25,7 @@ author:
 
 
 # URL settings
-url: "https://1f616neko.github.io/blog" # Domain Name of host. [username].github.io for github pages
+url: "https://blog.1f616emo.xyz" # Domain Name of host. [username].github.io for github pages
 permalink: pretty
 
 markdown: kramdown
