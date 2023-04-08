@@ -36,7 +36,7 @@ jobs:
         env:
           JEKYLL_ENV: production
       - name: Copy files
-        run: cp _headers _site && cd _redirects _site
+        run: cp _headers _site && cp _redirects _site
       - name: Deploy to Cloudflare Pages
         id: deployment
         uses: 1f616neko/actions-cfpage-deploy@main
