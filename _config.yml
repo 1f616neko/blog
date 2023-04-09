@@ -12,16 +12,16 @@ repository: 1f616neko/blog
 # Author settings
 author:
   name: 可愛EMO醬！
-  bio: 是可愛喵男！<br />
+  bio: 是可愛小貓娘！<br />
   picture: https://upload.wikimedia.org/wikipedia/commons/7/7c/Twemoji12_1f616.svg
   github: Emojigit # github username
-  twitter: "1F616EMO" # twitter username
+  twitter: "1F616EMO_" # twitter username
   facebook: # facebook username
   instagram: # instagram username
   youtube: # youtube username
   linkedin: # linkedin username
-  email: emonya@duck.com # email adress
-  telegram: "@emojiwiki" # Telegram username
+  email: root@1f616emo.xyz # email adress
+  telegram: "@nya_1f616emo" # Telegram username
 
 
 # URL settings
@@ -48,7 +48,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-minifier
-paginate: 20
+paginate: 10
 paginate_path: "/page/:num"
 
 collections:
