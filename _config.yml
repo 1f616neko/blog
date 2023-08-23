@@ -4,7 +4,7 @@ title: EMO醬的小天地
 keywords: blog
 description: >-
   EMO醬的文章喵！
-lang: zh-TW
+lang: zh_TW
 timezone:  Asia/Hong_Kong
 repo: 1f616neko/blog # site repo [optional]
 repository: 1f616neko/blog
@@ -22,6 +22,15 @@ author:
   linkedin: # linkedin username
   email: root@1f616emo.xyz # email adress
   telegram: "@nya_1f616emo" # Telegram username
+
+twitter:
+  username: 1F616EMO_
+  card: summary
+
+social:
+  name: 1F616EMO
+  links:
+    - https://twitter.com/1F616EMO_
 
 
 # URL settings
@@ -48,6 +57,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-relative-links
   - jekyll-minifier
+  - jekyll-seo-tag
 paginate: 10
 paginate_path: "/page/:num"
 
